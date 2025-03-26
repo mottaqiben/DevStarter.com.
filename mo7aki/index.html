@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم البرمجة - أكواد</title>
+    <link rel="stylesheet" href="kj.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>أكاديمية البرمجة</h1>
+            <nav>
+                <ul>
+                    <li><a href="#html-section">HTML</a></li>
+                    <li><a href="#css-section">CSS</a></li>
+                    <li><a href="#js-section">JavaScript</a></li>
+                    <li><a href="#examples">أمثلة</a></li>
+                    <li><a href="https://code.visualstudio.com/download">محرر الأكواد</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="html-section">
+            <h2>أساسيات HTML</h2>
+            <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;صفحتي الأولى&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;مرحباً بالعالم!&lt;/h1&gt;
+    &lt;p&gt;هذه هي صفحتي الأولى.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            <button class="copy-btn" data-code="html-example">نسخ الكود</button>
+        </section>
+
+        <section id="css-section">
+            <h2>أساسيات CSS</h2>
+            <pre><code class="language-css">
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+            </code></pre>
+            <button class="copy-btn" data-code="css-example">نسخ الكود</button>
+        </section>
+
+        <section id="js-section">
+            <h2>أساسيات JavaScript</h2>
+            <pre><code class="language-javascript">
+// دالة الترحيب
+function greet(name) {
+    return مرحباً ${name}!;
+}
+
+// استدعاء الدالة
+const message = greet("محمد");
+console.log(message); // "مرحباً محمد!"
+
+// حدث النقر على الزر
+document.getElementById('myButton').addEventListener('click', function() {
+    alert('تم النقر على الزر!');
+});
+            </code></pre>
+            <button class="copy-btn" data-code="js-example">نسخ الكود</button>
+        </section>
+
+        <section id="examples">
+            <h2>أمثلة برمجية</h2>
+            <div class="code-examples">
+                <div class="example-card">
+                    <h3>نموذج تسجيل الدخول</h3>
+                    <pre><code class="language-html">
+&lt;form&gt;
+    &lt;input type="text" placeholder="اسم المستخدم"&gt;
+    &lt;input type="password" placeholder="كلمة المرور"&gt;
+    &lt;button type="submit"&gt;تسجيل الدخول&lt;/button&gt;
+&lt;/form&gt;
+                    </code></pre>
+                </div>
+                
+                <div class="example-card">
+                    <h3>قائمة تنقل</h3>
+                    <pre><code class="language-html">
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;الرئيسية&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;من نحن&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;الخدمات&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;اتصل بنا&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 أكاديمية البرمجة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+    <script src="no.js"></script>
+</body>
+</html>
